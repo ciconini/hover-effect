@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  position: relative;
+  background-color: orange;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: block;
+}
+
+.button span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid orange;
+  opacity: 1;
+}
+
+.button:hover span {
+  transform: scale(1.2);
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
